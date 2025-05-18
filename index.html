@@ -339,7 +339,7 @@
       display: inline-flex;
       align-items: center;
       background: #0077b5;
-      color: #fff; /* Make the button text white */
+      color: #fff !important; /* Make the button text white */
       font-family: 'Montserrat', Arial, sans-serif;
       font-size: 1em;
       padding: 8px 18px;
@@ -359,15 +359,12 @@
     .linkedin-btn:hover {
       background: #005983;
     }
-    .linkedin-btn {
-      color: #fff !important; /* Ensure the button text is white */
-    }
     /* Style for the GitHub button with icon and text */
     .github-btn {
       display: inline-flex;
       align-items: center;
       background: #24402bd8;
-      color: #fff;
+      color: #fff !important; /* Make the button text white */
       font-family: 'Montserrat', Arial, sans-serif;
       font-size: 1em;
       padding: 8px 18px;
@@ -380,6 +377,25 @@
     }
     .github-btn:hover {
       background: #1a3323;
+    }
+    /* Style for the Design Portfolio button with a medium blue background */
+    .portfolio-btn {
+      display: inline-flex;
+      align-items: center;
+      background: #439bcd; /* medium blue */
+      color: #fff !important; /* Make the button text white */
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1em;
+      padding: 8px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      margin-top: 10px;
+      transition: background 0.2s;
+    }
+    .portfolio-btn:hover {
+      background: #285ea8;
     }
   </style>
 </head>
@@ -460,7 +476,7 @@
             View my GitHub
           </a>
           <!-- Beginner: Design Portfolio button below GitHub button -->
-          <a href="https://www.maryclaireco.com/" target="_blank" class="github-btn">
+          <a href="https://www.maryclaireco.com/" target="_blank" class="portfolio-btn">
             <span class="material-symbols-outlined" style="font-size:24px; vertical-align:middle; margin-right:6px; color:#fff;">palette</span>
             View my Design Portfolio
           </a>
