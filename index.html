@@ -342,6 +342,28 @@
     .linkedin-btn:hover {
       background: #005983;
     }
+    .linkedin-btn {
+      color: #fff !important; /* Ensure the button text is white */
+    }
+    /* Style for the GitHub button with icon and text */
+    .github-btn {
+      display: inline-flex;
+      align-items: center;
+      background: #24402bd8;
+      color: #fff;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1em;
+      padding: 8px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      margin-top: 10px;
+      transition: background 0.2s;
+    }
+    .github-btn:hover {
+      background: #1a3323;
+    }
   </style>
 </head>
 <body>
@@ -407,21 +429,12 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn icon" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">
             View my LinkedIn Profile
           </a>
+          <!-- Beginner: GitHub button below LinkedIn button -->
+          <a href="https://github.com/maryclaireickes" target="_blank" class="github-btn">
+            <span class="material-symbols-outlined" style="font-size:24px; vertical-align:middle; margin-right:6px; color:#fff;">code</span>
+            View my GitHub
+          </a>
         </div>
-      </div>
-    </section>
-    <!-- GitHub Section: Simple link to GitHub profile -->
-    <section class="bio" id="github">
-      <h2>My GitHub</h2>
-      <p>
-        You can see my code and web projects on my GitHub profile.
-      </p>
-      <!-- Beginner: GitHub icon to the left, text to the right, using a simple flex row -->
-      <div class="github-flex">
-        <a href="https://github.com/maryclaireickes" target="_blank" class="github-icon-link">
-          <span class="material-symbols-outlined">code</span>
-        </a>
-        <span class="github-link-text">Visit my GitHub</span>
       </div>
     </section>
   </div>
