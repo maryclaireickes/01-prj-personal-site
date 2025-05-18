@@ -182,9 +182,141 @@
     footer a:hover {
       border-bottom: 2px solid #bfa77a;
     }
+
+    /* Simple Navbar Styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      padding: 12px 20px;
+      border-bottom: 1px solid #e5ded6;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav-logo {
+      font-family: 'Bodoni Moda', serif;
+      font-size: 1.2em;
+      color: #2d2a26;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 18px;
+    }
+    .nav-links li {
+      display: inline;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #7d7466;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1em;
+      padding: 6px 8px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    .nav-links a:hover {
+      background: #f7f4ef;
+    }
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.7em;
+      cursor: pointer;
+      color: #7d7466;
+    }
+    /* Responsive: show hamburger and hide links on small screens */
+    @media (max-width: 600px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 48px;
+        right: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        border-radius: 8px;
+        min-width: 120px;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .nav-toggle {
+        display: block;
+      }
+    }
+
+    /* Make the LinkedIn preview a row with image on the left and text on the right */
+    .linkedin-flex {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 18px; /* space between image and text */
+    }
+    /* Set the LinkedIn image to 200px by 200px for beginners */
+    .linkedin-flex img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 2px solid #bfa77a;
+      margin-bottom: 0; /* remove bottom margin for side-by-side */
+      object-fit: cover; /* make sure the image fills the circle */
+    }
+    .linkedin-text h3 {
+      margin: 0 0 4px 0;
+      font-size: 1.1em;
+      color: #2d2a26;
+    }
+    .linkedin-text p {
+      color: #7d7466;
+      margin: 0 0 12px 0;
+      font-size: 1em;
+    }
+    .linkedin-text a {
+      color: #bfa77a;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 1px solid #bfa77a;
+      transition: border 0.2s;
+    }
+    .linkedin-text a:hover {
+      border-bottom: 2px solid #bfa77a;
+    }
+    /* Responsive: stack image above text on small screens */
+    @media (max-width: 500px) {
+      .linkedin-flex {
+        flex-direction: column;
+        align-items: center;
+      }
+      .linkedin-flex img {
+        margin-bottom: 12px;
+      }
+    }
   </style>
 </head>
 <body>
+  <!-- Simple Navbar -->
+  <nav class="navbar">
+    <!-- Logo or site name -->
+    <span class="nav-logo">Mary Claire Ickes</span>
+    <!-- Hamburger menu icon for mobile -->
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('show');">
+      &#9776;
+    </button>
+    <!-- Navigation links -->
+    <ul class="nav-links">
+      <li><a href="#bio">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#linkedin">LinkedIn</a></li>
+    </ul>
+  </nav>
+
   <!-- Hero Section with background photo and overlay -->
   <section class="hero">
     <!-- The background image and overlay are handled in CSS -->
@@ -198,7 +330,7 @@
 
   <div class="container">
     <!-- Biography Section: About Mary Claire Ickes -->
-    <section class="bio">
+    <section class="bio" id="bio">
       <h2>Get to know Mary Claire</h2>
       <p>
         Mary Claire Ickes is a passionate creative professional whose roots in a tight-knit Appalachian community have shaped her love for culture, education, and the arts. From an early age, she was immersed in experiences that blended creativity with exploration, whether performing onstage, engaging in hands-on science programs, or participating in community-based learning that stretched beyond the classroom.
@@ -212,7 +344,7 @@
     </section>
 
     <!-- Skills Section: List of skills -->
-    <section class="bio">
+    <section class="bio" id="skills">
       <h2>Skills</h2>
       <ul>
         <li>Graphic Design</li>
@@ -225,12 +357,16 @@
     </section>
 
     <!-- LinkedIn Preview Section: Profile preview and link -->
-    <section class="linkedin-preview">
-      <!-- You can replace the image src with your own LinkedIn profile picture -->
-      <img src="https://media.licdn.com/dms/image/C4E03AQF4y3kQw7v8xQ/profile-displayphoto-shrink_200_200/0/1517352081441?e=2147483647&v=beta&t=6pQw1kQw7v8xQ" alt="Mary Claire Ickes LinkedIn Photo">
-      <h3>Mary Claire Ickes</h3>
-      <p>Web Development Student | Creative Thinker</p>
-      <a href="https://www.linkedin.com/in/maryclaireickes/" target="_blank">View my LinkedIn Profile</a>
+    <section class="linkedin-preview" id="linkedin">
+      <!-- Use a flex container to place the image to the left of the text -->
+      <div class="linkedin-flex">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQGb_luMjJQuZA/profile-displayphoto-shrink_800_800/B4EZZiwg9cHMAc-/0/1745413607774?e=1753315200&v=beta&t=nT7vxfbLMvu2BWo4VsLzXeEdrhCF6mMzLginCfRjmL8" alt="Mary Claire Ickes LinkedIn Photo">
+        <div class="linkedin-text">
+          <h3>Mary Claire Ickes</h3>
+          <p>Web Development Student | Creative Thinker</p>
+          <a href="https://www.linkedin.com/in/maryclaireickes/" target="_blank">View my LinkedIn Profile</a>
+        </div>
+      </div>
     </section>
   </div>
 
