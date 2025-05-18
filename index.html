@@ -8,6 +8,8 @@
   <link href="https://fonts.google.com/specimen/Bodoni+Moda?lang=en_Latn&categoryFilters=Serif:%2FSerif%2FModern;Feeling:%2FExpressive%2FVintage" rel="stylesheet">
   <!-- Import Montserrat for body text -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Import Material Symbols for GitHub icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
   <style>
     /* Set a new background image for the whole page */
     body {
@@ -259,6 +261,17 @@
         margin-bottom: 12px;
       }
     }
+    /* Style for the Material Symbols icon */
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+      font-size: 32px; /* beginner: make the icon bigger */
+      vertical-align: middle;
+      color: #24402bd8;
+    }
   </style>
 </head>
 <body>
@@ -329,7 +342,10 @@
       <p>
         You can see my code and web projects on my GitHub profile.
       </p>
-      <a href="https://github.com/maryclaireickes" target="_blank">Visit my GitHub</a>
+      <!-- Beginner: This is a GitHub icon as a link -->
+      <a href="https://github.com/maryclaireickes" target="_blank">
+        <span class="material-symbols-outlined">code</span>
+      </a>
     </section>
   </div>
   <!-- Footer Section: Copyright and LinkedIn link -->
