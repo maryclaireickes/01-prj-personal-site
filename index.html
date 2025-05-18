@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mary Claire Ickes Portfolio</title>
-  <!-- Import Bodoni Moda SC for headings -->
-  <link href="https://fonts.google.com/specimen/Bodoni+Moda?lang=en_Latn&categoryFilters=Serif:%2FSerif%2FModern;Feeling:%2FExpressive%2FVintage" rel="stylesheet">
+  <!-- Import Merriweather for headings -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
   <!-- Import Montserrat for body text -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Import Sacramento font for hero heading -->
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <!-- Import Meow Script font for hero heading -->
+  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
   <style>
     /* Set a new background image for the whole page */
     body {
@@ -22,9 +26,9 @@
       padding: 0;
     }
 
-    /* Use Bodoni Moda SC for headings for a modern, elegant look */
+    /* Use Merriweather for headings for a modern, elegant look */
     h1, h2, h3 {
-      font-family: 'Bodoni Moda SC', serif;
+      font-family: 'Merriweather', serif;
       font-weight: 700;
       letter-spacing: 1px;
     }
@@ -72,8 +76,10 @@
       width: 100%;
       padding: 0 16px;
     }
+    /* Use Meow Script font for the hero h1 heading */
     .hero-content h1 {
-      font-size: 2.5em;
+      font-family: 'Meow Script', cursive;
+      font-size: 14px; /* beginner: set font size to 14px */
       margin-bottom: 12px;
       color: #fff;
       text-shadow: 0 2px 8px rgba(0,0,0,0.25);
@@ -96,12 +102,12 @@
     .bio h2 {
       font-size: 1.4em;
       margin-bottom: 10px;
-      color: #2d2a26;
+      color: #084217;
     }
     .bio p {
       font-size: 1em;
       line-height: 1.7;
-      color: #4d463f;
+      color: 084217;
       margin: 0;
     }
 
@@ -112,7 +118,7 @@
     .skills h2 {
       font-size: 1.3em;
       margin-bottom: 10px;
-      color: #2d2a26;
+      color: #084217;
     }
     .skills ul {
       list-style-type: disc;
@@ -122,7 +128,7 @@
     .skills li {
       margin-bottom: 8px;
       font-size: 1em;
-      color: #4d463f;
+      color: #084217;
     }
 
     /* LinkedIn preview: soft card with accent border */
@@ -144,7 +150,7 @@
     .linkedin-preview h3 {
       margin: 8px 0 4px 0;
       font-size: 1.1em;
-      color: #2d2a26;
+      color: #084217;
     }
     .linkedin-preview p {
       color: #7d7466;
@@ -162,6 +168,41 @@
       border-bottom: 2px solid #bfa77a;
     }
 
+    /* Design Portfolio section styles */
+    .portfolio-section {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px rgba(180, 170, 150, 0.07);
+      padding: 28px 22px;
+      margin: 36px 0;
+      text-align: center;
+    }
+    .portfolio-section h2 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      color: #2084217;
+    }
+    .portfolio-section p {
+      font-size: 1em;
+      color: 084217;
+      margin-bottom: 18px;
+    }
+    .portfolio-btn {
+      display: inline-block;
+      background: #bfa77a;
+      color: #fff;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1em;
+      padding: 10px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .portfolio-btn:hover {
+      background: #a68a5b;
+    }
+
     /* Footer: simple, soft, and centered */
     footer {
       background: #f7f4ef;
@@ -169,7 +210,7 @@
       padding: 18px 0;
       margin-top: 40px;
       font-size: 1em;
-      color: #7d7466;
+      color: #084217;
       border-top: 1px solid #e5ded6;
     }
     footer a {
@@ -198,7 +239,7 @@
     .nav-logo {
       font-family: 'Bodoni Moda', serif;
       font-size: 1.2em;
-      color: #2d2a26;
+      color: #084217;
       font-weight: bold;
     }
     .nav-links {
@@ -213,7 +254,7 @@
     }
     .nav-links a {
       text-decoration: none;
-      color: #7d7466;
+      color: #084217;
       font-family: 'Montserrat', Arial, sans-serif;
       font-size: 1em;
       padding: 6px 8px;
@@ -271,7 +312,7 @@
     .linkedin-text h3 {
       margin: 0 0 4px 0;
       font-size: 1.1em;
-      color: #2d2a26;
+      color: #084217;
     }
     .linkedin-text p {
       color: #7d7466;
@@ -314,6 +355,7 @@
       <li><a href="#bio">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#linkedin">LinkedIn</a></li>
+      <li><a href="#portfolio">Graphic Design Portfolio</a></li>
     </ul>
   </nav>
 
@@ -323,7 +365,7 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Mary Claire Ickes</h1>
-      <p>Designing, building, and sharing beautiful digital experiences.<br>
+      <p>DESIGN ROOTED IN CLARITY, CONNECTION, AND INTENTION. <br>
       Welcome to my creative portfolio!</p>
     </div>
   </section>
@@ -367,6 +409,14 @@
           <a href="https://www.linkedin.com/in/maryclaireickes/" target="_blank">View my LinkedIn Profile</a>
         </div>
       </div>
+    </section>
+
+    <!-- Design Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+      <h2>Graphic Design Portfolio</h2>
+      <p>See more of Mary Claire's creative work and design projects on her main portfolio website.</p>
+      <!-- Button to external portfolio site -->
+      <a href="https://www.maryclaireco.com/" target="_blank" class="portfolio-btn">Visit maryclaireco.com</a>
     </section>
   </div>
 
