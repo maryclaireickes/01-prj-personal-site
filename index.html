@@ -317,6 +317,31 @@
       color: #24402bd8;
       font-family: 'Montserrat', Arial, sans-serif;
     }
+    /* Style for the LinkedIn button with icon and text */
+    .linkedin-btn {
+      display: inline-flex;
+      align-items: center;
+      background: #0077b5;
+      color: #fff; /* Make the button text white */
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1em;
+      padding: 8px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none; /* No border */
+      margin-top: 10px;
+      transition: background 0.2s;
+    }
+    .linkedin-btn img {
+      margin-right: 8px;
+      width: 24px;
+      height: 24px;
+      border: none; /* Remove border around the icon */
+    }
+    .linkedin-btn:hover {
+      background: #005983;
+    }
   </style>
 </head>
 <body>
@@ -377,7 +402,7 @@
         <div class="linkedin-text">
           <h3>Mary Claire Ickes</h3>
           <p>Web Development Student | Creative Thinker</p>
-          <a href="https://www.linkedin.com/in/maryclaireickes/" target="_blank">
+          <a href="https://www.linkedin.com/in/maryclaireickes/" target="_blank" class="linkedin-btn">
             <!-- Beginner: LinkedIn icon to the left of the link text -->
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn icon" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">
             View my LinkedIn Profile
