@@ -9,9 +9,13 @@
   <!-- Import Montserrat for body text -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* Set a soft, light background and use Montserrat for body text */
+    /* Set a new background image for the whole page */
     body {
-      background-color: #f9f6f2; /* very light beige */
+      /* This sets the new background image */
+      background-image: url('https://i.pinimg.com/736x/d9/dc/81/d9dc81bd4f8558dc0f2825ff48476e1b.jpg');
+      background-size: cover; /* Make the image cover the whole page */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-attachment: fixed; /* Keep the image fixed when scrolling */
       font-family: 'Montserrat', Arial, sans-serif;
       color: #222;
       margin: 0;
@@ -31,24 +35,54 @@
       max-width: 700px;
       margin: 0 auto;
       padding: 32px 0;
+      /* Add a white background and some transparency so text is easy to read */
+      background: rgba(255,255,255,0.92);
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(180, 170, 150, 0.07);
     }
 
     /* Hero section: large, elegant intro */
     .hero {
+      position: relative;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 56px 0 32px 0;
+      margin-bottom: 32px;
+      /* Set the hero background image */
+      background-image: url('https://scontent-iad3-1.xx.fbcdn.net/v/t1.6435-9/52941707_10213428208406219_6055934063800221696_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2UHLhhu6nkMQ7kNvwFLxn7q&_nc_oc=AdlDlc5ehXcfTgC1Reu8c0a3zJGpm0qCYa5QU8mpcCDvm2jqjL-3hG_kNdtoiPaNYLM&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=gnKMVjKXY6zxs0RIyvyXbA&oh=00_AfLfHkqjyUEIP0qsEGSOAwAXepX7Y8ruEt8vQhgGBQwWtA&oe=6851958E');
+      background-size: cover;
+      background-position: center;
+      border-radius: 16px 16px 0 0;
+      overflow: hidden;
     }
-    .hero h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-      color: #2d2a26; /* dark brownish for elegance */
+    /* Overlay to make text easier to read */
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(40, 30, 20, 0.45); /* semi-transparent dark overlay */
+      z-index: 1;
     }
-    .hero p {
+    /* Content sits above the overlay */
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      width: 100%;
+      padding: 0 16px;
+    }
+    .hero-content h1 {
+      font-size: 2.5em;
+      margin-bottom: 12px;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    }
+    .hero-content p {
       font-size: 1.15em;
-      color: #7d7466; /* soft brown/gray */
-      margin-top: 0;
-      margin-bottom: 0;
-      letter-spacing: 0.5px;
+      margin: 0;
+      color: #f7f4ef;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.18);
     }
 
     /* Biography section: clean card style */
@@ -151,14 +185,18 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Hero Section: Main title and creative intro -->
-    <section class="hero">
+  <!-- Hero Section with background photo and overlay -->
+  <section class="hero">
+    <!-- The background image and overlay are handled in CSS -->
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
       <h1>Mary Claire Ickes</h1>
       <p>Designing, building, and sharing beautiful digital experiences.<br>
       Welcome to my creative portfolio!</p>
-    </section>
+    </div>
+  </section>
 
+  <div class="container">
     <!-- Biography Section: About Mary Claire Ickes -->
     <section class="bio">
       <h2>About Me</h2>
