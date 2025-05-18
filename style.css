@@ -1,1 +1,4 @@
-/* Add you CSS here */
+//* Use Bodoni Moda SC for all headings */
+h1, h2, h3 {
+  font-family: 'Bodoni Moda SC', serif;
+}* Add you CSS here */

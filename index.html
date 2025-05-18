@@ -2,10 +2,181 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mary Claire Ickes Portfolio</title>
+  <!-- Import the Bodoni Moda SC font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:wght@400;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+  <style>
+    /* Use the Bodoni Moda SC font for headings and Helvetica for body text */
+    body {
+      background-color: #faf9f6; /* light, warm background */
+      font-family: 'Montserrat', Arial, sans-serif; /* main font for body text */
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Use creative font for headings */
+    h1, h2, h3 {
+      font-family: 'Bodoni Moda SC', serif;
+    }
+
+    /* Container for all content */
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 0;
+    }
+
+    /* Hero section styling */
+    .hero {
+      text-align: center;
+      padding: 48px 0 32px 0;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #6d6d6d;
+      margin-bottom: 0;
+    }
+
+    /* Biography section */
+    .bio {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      padding: 24px;
+      margin: 32px 0;
+    }
+    .bio h2 {
+      font-size: 1.5em;
+      margin-bottom: 8px;
+    }
+    .bio p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    /* Skills section */
+    .skills {
+      margin: 32px 0;
+    }
+    .skills h2 {
+      font-size: 1.5em;
+      margin-bottom: 8px;
+    }
+    .skills ul {
+      list-style-type: disc;
+      padding-left: 24px;
+    }
+    .skills li {
+      margin-bottom: 6px;
+      font-size: 1em;
+    }
+
+    /* LinkedIn preview section */
+    .linkedin-preview {
+      background: #eaf4fb;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 32px 0;
+      text-align: center;
+    }
+    .linkedin-preview img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 12px;
+      border: 2px solid #0077b5;
+    }
+    .linkedin-preview h3 {
+      margin: 8px 0 4px 0;
+      font-size: 1.2em;
+    }
+    .linkedin-preview p {
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .linkedin-preview a {
+      color: #0077b5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .linkedin-preview a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer styling */
+    footer {
+      background: #f2f2f2;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
+    footer a {
+      color: #0077b5;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- Main heading and creative copy -->
+      <h1>Mary Claire Ickes</h1>
+      <p>Designing, building, and sharing beautiful digital experiences.<br>
+      Welcome to my creative portfolio!</p>
+    </section>
+
+    <!-- Biography Section -->
+    <section class="bio">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Mary Claire Ickes, a passionate web development student with a love for creativity and storytelling. I enjoy turning ideas into engaging websites and digital projects. As I learn and grow in my college course, I'm excited to share my journey and showcase the projects I create along the way.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML &amp; CSS</li>
+        <li>Responsive Web Design</li>
+        <li>Basic JavaScript</li>
+        <li>Creative Writing</li>
+        <li>Project Collaboration</li>
+        <li>Visual Storytelling</li>
+      </ul>
+    </section>
+
+    <!-- LinkedIn Preview Section -->
+    <section class="linkedin-preview">
+      <!-- Replace the image src with your own LinkedIn profile picture if you like -->
+      <img src="https://media.licdn.com/dms/image/C4E03AQF4y3kQw7v8xQ/profile-displayphoto-shrink_200_200/0/1517352081441?e=2147483647&v=beta&t=6pQw1kQw7v8xQ" alt="Mary Claire Ickes LinkedIn Photo">
+      <h3>Mary Claire Ickes</h3>
+      <p>Web Development Student | Creative Thinker</p>
+      <a href="https://www.linkedin.com/in/maryclaireickes/" target="_blank">View my LinkedIn Profile</a>
+    </section>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <!-- Simple footer with LinkedIn link -->
+    &copy; 2025 Mary Claire Ickes &mdash; 
+    <a href="https://www.linkedin.com/in/maryclaireickes/" target="_blank">LinkedIn</a>
+  </footer>
 </body>
 </html>
