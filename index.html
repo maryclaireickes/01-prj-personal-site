@@ -272,6 +272,51 @@
       vertical-align: middle;
       color: #24402bd8;
     }
+    /* Style the GitHub icon link with a green background and white icon */
+    .github-icon-link {
+      display: inline-block;
+      background: #24402bd8; /* green background */
+      border-radius: 50%;
+      padding: 10px;
+      text-align: center;
+      transition: background 0.2s;
+    }
+    .github-icon-link .material-symbols-outlined {
+      color: #fff; /* white icon */
+      font-size: 32px;
+      vertical-align: middle;
+    }
+    .github-icon-link:hover {
+      background: #1a3323;
+    }
+    /* Simple flex row for GitHub icon and text */
+    .github-flex {
+      display: flex;
+      align-items: center;
+      gap: 16px; /* space between icon and text */
+      margin-top: 10px;
+    }
+    .github-icon-link {
+      display: inline-block;
+      background: #24402bd8; /* green background */
+      border-radius: 50%;
+      padding: 10px;
+      text-align: center;
+      transition: background 0.2s;
+    }
+    .github-icon-link .material-symbols-outlined {
+      color: #fff; /* white icon */
+      font-size: 70px; /* make the icon 70px wide */
+      vertical-align: middle;
+    }
+    .github-icon-link:hover {
+      background: #1a3323;
+    }
+    .github-link-text {
+      font-size: 1.1em;
+      color: #24402bd8;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
   </style>
 </head>
 <body>
@@ -332,7 +377,11 @@
         <div class="linkedin-text">
           <h3>Mary Claire Ickes</h3>
           <p>Web Development Student | Creative Thinker</p>
-          <a href="https://www.linkedin.com/in/maryclaireickes/" target="_blank">View my LinkedIn Profile</a>
+          <a href="https://www.linkedin.com/in/maryclaireickes/" target="_blank">
+            <!-- Beginner: LinkedIn icon to the left of the link text -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn icon" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">
+            View my LinkedIn Profile
+          </a>
         </div>
       </div>
     </section>
@@ -342,10 +391,13 @@
       <p>
         You can see my code and web projects on my GitHub profile.
       </p>
-      <!-- Beginner: This is a GitHub icon as a link -->
-      <a href="https://github.com/maryclaireickes" target="_blank">
-        <span class="material-symbols-outlined">code</span>
-      </a>
+      <!-- Beginner: GitHub icon to the left, text to the right, using a simple flex row -->
+      <div class="github-flex">
+        <a href="https://github.com/maryclaireickes" target="_blank" class="github-icon-link">
+          <span class="material-symbols-outlined">code</span>
+        </a>
+        <span class="github-link-text">Visit my GitHub</span>
+      </div>
     </section>
   </div>
   <!-- Footer Section: Copyright and LinkedIn link -->
