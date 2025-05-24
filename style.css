@@ -1,4 +1,26 @@
-//* Use Bodoni Moda SC for all headings */
+/* Use Bodoni Moda SC for all headings */
 h1, h2, h3 {
   font-family: 'Bodoni Moda SC', serif;
-}* Add you CSS here */
+}
+
+/* Add you CSS here */
+
+/* Style for the Intel button with a simple design */
+.intel-btn {
+  display: inline-block;
+  background: #f7f4ef; /* soft background */
+  color: #24402bd8; /* main accent color */
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 20px 0;
+  transition: background 0.2s, transform 0.2s;
+  text-align: center;
+}
+.intel-btn:hover {
+  background: #e5ded6;
+  transform: translateY(-2px);
+}
